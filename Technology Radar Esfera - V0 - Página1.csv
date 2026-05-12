@@ -1,0 +1,32 @@
+name,ring,quadrant,isNew,status,description
+Domain-Driven Design (DDD),Adopt,Techniques,VERDADEIRO,new,"<p><strong>Domain-Driven Design (DDD)</strong> é uma abordagem arquitetural voltada para sistemas com alta complexidade de negócio, onde múltiplos times, integrações e regras evoluem continuamente. Em vez de organizar soluções apenas por tecnologia ou sistemas, o DDD estrutura a arquitetura a partir dos domínios de negócio e suas capacidades.</p> <p>Um dos principais conceitos do DDD é o de <strong>Bounded Contexts</strong>, que definem limites claros de responsabilidade para cada domínio, reduzindo acoplamento e evitando compartilhamento excessivo de regras e dados entre sistemas. Isso permite maior autonomia dos times e evolução mais sustentável da arquitetura.</p> <p>O DDD é frequentemente combinado com práticas como <strong>arquitetura orientada a eventos</strong>, APIs desacopladas e <strong>Context Mapping</strong>, permitindo modelar relações entre domínios, integrações e dependências de forma explícita.</p> <p>Além da parte técnica, o DDD também promove alinhamento entre negócio e tecnologia por meio de uma <strong>linguagem ubíqua</strong>, compartilhada entre áreas de negócio e equipes técnicas, melhorando comunicação, governança e entendimento dos processos corporativos.</p>"
+Event-Driven Architecture,Adopt,Techniques,VERDADEIRO,new,Event-Driven Architecture recomendado para evolução arquitetural da Esfera Energia.
+API First,Adopt,Techniques,VERDADEIRO,new,API First recomendado para evolução arquitetural da Esfera Energia.
+Context Mapping,Adopt,Techniques,VERDADEIRO,new,Context Mapping recomendado para evolução arquitetural da Esfera Energia.
+Event Storming,Trial,Techniques,VERDADEIRO,new,Event Storming recomendado para evolução arquitetural da Esfera Energia.
+Data Products,Trial,Techniques,VERDADEIRO,new,Data Products recomendado para evolução arquitetural da Esfera Energia.
+Arquitetura Hexagonal,Trial,Techniques,VERDADEIRO,new,Arquitetura Hexagonal recomendado para evolução arquitetural da Esfera Energia.
+CQRS,Assess,Techniques,VERDADEIRO,new,CQRS recomendado para evolução arquitetural da Esfera Energia.
+ESB centralizado,Hold,Techniques,VERDADEIRO,new,ESB centralizado recomendado para evolução arquitetural da Esfera Energia.
+Integrações ponto a ponto,Hold,Techniques,VERDADEIRO,new,Integrações ponto a ponto recomendado para evolução arquitetural da Esfera Energia.
+Salesforce,Adopt,Platforms,VERDADEIRO,new,Salesforce recomendado para evolução arquitetural da Esfera Energia.
+Plataforma Corporativa de Integração,Adopt,Platforms,VERDADEIRO,new,Plataforma Corporativa de Integração recomendado para evolução arquitetural da Esfera Energia.
+Event Bus / Mensageria,Adopt,Platforms,VERDADEIRO,new,Event Bus / Mensageria recomendado para evolução arquitetural da Esfera Energia.
+API Gateway,Adopt,Platforms,VERDADEIRO,new,API Gateway recomendado para evolução arquitetural da Esfera Energia.
+Data Lake,Trial,Platforms,VERDADEIRO,new,Data Lake recomendado para evolução arquitetural da Esfera Energia.
+Lakehouse,Assess,Platforms,VERDADEIRO,new,Lakehouse recomendado para evolução arquitetural da Esfera Energia.
+Confluence,Adopt,Tools,VERDADEIRO,new,Confluence recomendado para evolução arquitetural da Esfera Energia.
+Draw.io,Adopt,Tools,VERDADEIRO,new,Draw.io recomendado para evolução arquitetural da Esfera Energia.
+Jira,Adopt,Tools,VERDADEIRO,new,Jira recomendado para evolução arquitetural da Esfera Energia.
+GitHub,Adopt,Tools,VERDADEIRO,new,GitHub recomendado para evolução arquitetural da Esfera Energia.
+Postman,Adopt,Tools,VERDADEIRO,new,Postman recomendado para evolução arquitetural da Esfera Energia.
+Backstage,Assess,Tools,VERDADEIRO,new,Backstage recomendado para evolução arquitetural da Esfera Energia.
+APIs REST,Adopt,languages-and-frameworks,VERDADEIRO,new,APIs REST recomendado para evolução arquitetural da Esfera Energia.
+JSON Schema,Adopt,languages-and-frameworks,VERDADEIRO,new,JSON Schema recomendado para evolução arquitetural da Esfera Energia.
+OAuth2 / JWT,Adopt,languages-and-frameworks,VERDADEIRO,new,OAuth2 / JWT recomendado para evolução arquitetural da Esfera Energia.
+Kafka,Trial,languages-and-frameworks,VERDADEIRO,new,Kafka recomendado para evolução arquitetural da Esfera Energia.
+GraphQL,Assess,languages-and-frameworks,VERDADEIRO,new,GraphQL recomendado para evolução arquitetural da Esfera Energia.
+Python para Analytics,Adopt,languages-and-frameworks,VERDADEIRO,new,Python para Analytics recomendado para evolução arquitetural da Esfera Energia.
+Spark,Trial,languages-and-frameworks,VERDADEIRO,new,Spark recomendado para evolução arquitetural da Esfera Energia.
+Terraform,Trial,languages-and-frameworks,VERDADEIRO,new,Terraform recomendado para evolução arquitetural da Esfera Energia.
+SOAP legado,Hold,languages-and-frameworks,VERDADEIRO,new,SOAP legado recomendado para evolução arquitetural da Esfera Energia.
