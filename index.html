@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosso Tech Radar</title>
-    <style>
-        body, html, iframe { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; border: none; }
-    </style>
+    <title>Tech Radar Interno</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://radar.thoughtworks.com/radar.js"></script>
+    <link rel="stylesheet" href="https://radar.thoughtworks.com/radar.css">
 </head>
 <body>
-    <iframe src="https://radar.thoughtworks.com/?sheetId=https://raw.githubusercontent.com/SEU_USUARIO/SEU_REPOSITORIO/main/radar.csv"></iframe>
+    <svg id="radar"></svg>
+    <script>
+    // Configuração do seu Radar
+    radar_visualization({
+      svg_id: "radar",
+      width: 1450,
+      height: 1000,
+      colors: { background: "#fff", grid: "#bbb", inactive: "#ddd" },
+      title: "Nosso Tech Radar",
+      rings: [
+        { name: "ADOPT", color: "#93c47d" },
+        { name: "TRIAL", color: "#93d2e2" },
+        { name: "ASSESS", color: "#fbdb84" },
+        { name: "HOLD", color: "#efafa9" }
+      ],
+      print_layout: true,
+      // AQUI: Link para o seu CSV no GitHub (clique em 'Raw' no seu CSV para pegar o link correto)
+      csv: "https://raw.githubusercontent.com/mosmendes/techradar/refs/heads/main/Technology%20Radar%20Esfera%20-%20V0%20-%20P%C3%A1gina1.csv"
+    });
+    </script>
 </body>
 </html>
