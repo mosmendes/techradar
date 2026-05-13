@@ -2,31 +2,43 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Tech Radar Interno</title>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://radar.thoughtworks.com/radar.js"></script>
-    <link rel="stylesheet" href="https://radar.thoughtworks.com/radar.css">
+    <title>Tech Radar</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script src="https://thoughtworks.github.io/build-your-own-radar/radar.js"></script>
+    <link rel="stylesheet" href="https://thoughtworks.github.io/build-your-own-radar/radar.css">
+    <style>
+        body { font-family: sans-serif; background-color: #f4f4f4; }
+        #radar { width: 100%; height: 100vh; display: block; margin: 0 auto; }
+        #status-check { padding: 10px; color: #666; font-size: 12px; }
+    </style>
 </head>
 <body>
+    <div id="status-check">Carregando Radar... (Se sumir, o script iniciou)</div>
     <svg id="radar"></svg>
+
     <script>
-    // Configuração do seu Radar
-    radar_visualization({
-      svg_id: "radar",
-      width: 1450,
-      height: 1000,
-      colors: { background: "#fff", grid: "#bbb", inactive: "#ddd" },
-      title: "Nosso Tech Radar",
-      rings: [
-        { name: "ADOPT", color: "#93c47d" },
-        { name: "TRIAL", color: "#93d2e2" },
-        { name: "ASSESS", color: "#fbdb84" },
-        { name: "HOLD", color: "#efafa9" }
-      ],
-      print_layout: true,
-      // AQUI: Link para o seu CSV no GitHub (clique em 'Raw' no seu CSV para pegar o link correto)
-      csv: "https://raw.githubusercontent.com/mosmendes/techradar/main/Technology Radar Esfera - V0 - Página1.csv"
-    });
+    try {
+        radar_visualization({
+          svg_id: "radar",
+          width: 1400,
+          height: 1000,
+          colors: { background: "#fff", grid: "#bbb", inactive: "#ddd" },
+          title: "Nosso Tech Radar",
+          rings: [
+            { name: "ADOPT", color: "#93c47d" },
+            { name: "TRIAL", color: "#93d2e2" },
+            { name: "ASSESS", color: "#fbdb84" },
+            { name: "HOLD", color: "#efafa9" }
+          ],
+          print_layout: true,
+          // CERTIFIQUE-SE QUE ESTE LINK É O 'RAW' DO SEU GITHUB
+          csv: "https://raw.githubusercontent.com/mosmendes/echradar/main/Technology Radar Esfera - V0 - Página1.csv"
+        });
+        document.getElementById('status-check').style.display = 'none';
+    } catch (e) {
+        document.getElementById('status-check').innerHTML = "Erro ao carregar radar: " + e.message;
+        console.error(e);
+    }
     </script>
 </body>
 </html>
